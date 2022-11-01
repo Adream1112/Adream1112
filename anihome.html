@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Home</title>
+    <link rel="stylesheet" href="NAV.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <nav>
+        
+    
+    <div>
+        
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Portefolio</a>
+        <a href="#">Contact</a>
+        <div class="animation start-home"></div>
+        
+    </div>
+    
+    
+    
+    
+</nav>
+</head>
+<body>
+
+    <div class="container">
+        <div class="icon">
+            <i class="search fa fa-search"></i>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="search" id="search" >
+            <i class="clear fa fa-times"></i>
+        </div>
+    </div>  
+    <script>
+        let search = document.querySelector(".search");
+        let clear = document.querySelector(".clear");
+        search.onclick = function(){
+            document.querySelector(".container").classList.toggle('active');
+        }
+        clear.onclick = function(){
+            document.getElementById("search").value="";
+        }
+    </script>
+</body>
+</html>
